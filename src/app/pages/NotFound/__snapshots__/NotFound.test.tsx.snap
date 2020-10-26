@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Компонент undefined, отрисован корректно 1`] = `
+<div
+  className="page-body"
+>
+  <div
+    className=""
+  >
+    404 Not found
+  </div>
+</div>
+`;

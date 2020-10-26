@@ -1,0 +1,6 @@
+@import "src/app/shared/style/style.const";
+@import "src/app/shared/style/style.classes";
+
+.menu-setting {
+  @extend .flex-center;
+}

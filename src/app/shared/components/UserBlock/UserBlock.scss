@@ -1,0 +1,32 @@
+@import "src/app/shared/style/style.const";
+@import "src/app/shared/style/style.classes";
+
+.user-block {
+  @extend .flex-center;
+
+  &-avatar {
+    @extend .flex-center;
+    img {
+      height: 80px;
+      width: 80px;
+      border-radius: $border-radius-ovalshape;
+    }
+  }
+  &-title {
+    margin-left: 42px;
+  }
+
+  &__mini {
+    .user-block-avatar {
+      @extend .flex-center;
+      img {
+        height: 40px !important;
+        width: 40px !important;
+        border-radius: $border-radius-ovalshape;
+      }
+    }
+    .user-block-title {
+      margin-left: 20px;
+    }
+  }
+}

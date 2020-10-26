@@ -1,0 +1,50 @@
+.active-notification {
+  top: 0 !important;
+
+  transition: all 0.5s;
+}
+.animate {
+  opacity: 0.5;
+  pointer-events: none;
+
+  .spinner {
+    display: block;
+    height: 18px;
+    width: 18px;
+
+    margin-left: 10px;
+
+    background: url("../../../assets/loading/spinner-icon.svg") no-repeat center;
+    animation: animate-spinner 1s infinite;
+  }
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.row-default {
+  box-sizing: border-box;
+  padding: 33px 77px;
+}
+@keyframes animate-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

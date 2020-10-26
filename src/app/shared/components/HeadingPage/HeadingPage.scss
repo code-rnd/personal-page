@@ -1,0 +1,29 @@
+@import "src/app/shared/style/style.const";
+@import "src/app/shared/style/style.classes";
+
+.heading-page {
+  justify-content: space-between !important;
+
+  height: 128px;
+  box-sizing: border-box;
+  padding: 24px 30px;
+  background: #1a78c2;
+  color: white;
+  border-radius: $border-radius;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 24px;
+
+  &-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  &-buttons {
+    @extend .flex-center;
+
+    .button {
+      margin-left: 15px;
+    }
+  }
+}

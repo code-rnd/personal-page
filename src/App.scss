@@ -1,0 +1,23 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Open Sans", sans-serif;
+
+  #root {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .page {
+      min-height: 100vh;
+      width: 100%;
+
+      background: url("assets/page/bg-page.svg") no-repeat top;
+      background-size: 100%;
+    }
+  }
+}

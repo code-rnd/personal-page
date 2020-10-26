@@ -1,0 +1,56 @@
+@import "src/app/shared/style/style.const";
+
+.fieldText {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  width: 254px;
+  transition: all 0.5s;
+
+  &-title {
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    background-color: white;
+    color: rgba(49, 49, 49, 0.7);
+  }
+
+  &__disable {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  &__errors {
+    position: absolute;
+    bottom: 60px;
+
+    opacity: 0;
+    color: $color-error;
+
+    transition: all 0.3s;
+  }
+
+  &__visible {
+    padding: 10px 0;
+    opacity: 0.8;
+
+    transition: all 0.3s;
+  }
+
+  input[type="text"] {
+    border: 1px solid $color-mute;
+    border-radius: $border-radius;
+
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 57px;
+
+    outline: none;
+  }
+}

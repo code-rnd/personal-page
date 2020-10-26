@@ -1,0 +1,60 @@
+@import "src/app/shared/style/style.const";
+@import "src/app/shared/style/style.classes";
+
+.notification {
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+
+  text-align: right;
+  height: 30px;
+  width: 30px;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+
+  &-tooltip {
+    position: absolute;
+    opacity: 1;
+    top: -2px;
+    right: 60px;
+    width: max-content;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: $border-radius;
+
+    background-color: $color-success;
+    transition: all 0.5s;
+
+    &__hidden {
+      opacity: 0;
+
+      transition: all 0.5s;
+    }
+  }
+
+  &-ovalshape {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    height: 10px;
+    width: 10px;
+
+    border-radius: $border-radius-ovalshape;
+    &__warning {
+      background-color: $color-warning;
+      @extend .active-notification;
+    }
+    &__error {
+      background-color: $color-error;
+      @extend .active-notification;
+    }
+    &__success {
+      background-color: $color-success;
+      @extend .active-notification;
+    }
+  }
+}

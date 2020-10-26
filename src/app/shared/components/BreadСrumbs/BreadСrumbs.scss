@@ -1,0 +1,14 @@
+.bread-crumbs {
+  color: white;
+  &-header {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  &-body {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,27 @@
+@import "src/app/shared/style/style.const";
+@import "src/app/shared/style/style.classes";
+
+.table-history {
+  &-row__header {
+    font-weight: bold;
+
+    &:hover {
+      background-color: white !important;
+    }
+  }
+
+  &-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  &-row {
+    @extend .row-default;
+    border-bottom: $border-bottom-row;
+
+    &:hover {
+      background-color: $color-success-muted;
+    }
+  }
+}

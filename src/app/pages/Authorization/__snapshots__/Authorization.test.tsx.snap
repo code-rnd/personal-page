@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Компонент undefined, отрисован корректно 1`] = `
+<div
+  className="page-authorization"
+>
+  <div
+    className="page-authorization-body"
+  >
+    <div
+      className="authorization-form"
+    >
+      <div
+        className="fieldText"
+      >
+        <label>
+          Имя пользователя
+        </label>
+        <input
+          name="name"
+          placeholder="Rob"
+          type="text"
+        />
+        <label
+          className="fieldText__errors"
+        >
+          Имя пользователя
+          *
+        </label>
+      </div>
+      <div
+        className="button button__default"
+        onClick={[Function]}
+        style={
+          Object {
+            "margin": 0,
+            "width": "100%",
+          }
+        }
+      >
+        Вход
+      </div>
+    </div>
+  </div>
+</div>
+`;

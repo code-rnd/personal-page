@@ -1,0 +1,17 @@
+@import "src/app/shared/style/style.classes";
+
+.loading {
+  height: 100%;
+  width: 100%;
+
+  @extend .flex-center;
+
+  .spinner {
+    height: 40px;
+    width: 40px;
+
+    background: url("../../../../assets/loading/spinner-icon.svg") no-repeat
+      center;
+    animation: animate-spinner 1s infinite;
+  }
+}

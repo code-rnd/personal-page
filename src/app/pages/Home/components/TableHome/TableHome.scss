@@ -1,0 +1,23 @@
+@import "../../../../shared/style/style.const";
+@import "../../../../shared/style/style.classes";
+
+.table-home {
+  &-row {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-column-gap: 30px;
+
+    height: 96px;
+    box-sizing: border-box;
+    padding: 33px 0 33px 77px;
+    border-bottom: $border-bottom-row;
+
+    font-size: 18px;
+
+    @extend .flex-center;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}

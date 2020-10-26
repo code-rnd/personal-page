@@ -1,0 +1,44 @@
+@import "src/app/shared/style/style.const";
+@import "src/app/shared/style/style.classes";
+
+.table-contacts {
+  &-row__header {
+    font-weight: bold;
+
+    &:hover {
+      background-color: white !important;
+    }
+  }
+
+  &-row {
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 1fr 300px;
+    grid-column-gap: 30px;
+  }
+
+  &-row {
+    @extend .row-default;
+    border-bottom: $border-bottom-row;
+
+    &:hover {
+      background-color: $color-success-muted;
+    }
+  }
+
+  &-row {
+    &__archive {
+      background-color: $color-success-muted;
+      &:hover {
+        background-color: $color-success-muted;
+      }
+      .table-contacts-col {
+        pointer-events: none;
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &-col {
+    @extend .flex-center;
+  }
+}

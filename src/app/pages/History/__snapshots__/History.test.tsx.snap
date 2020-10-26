@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Компонент undefined, отрисован корректно 1`] = `
+<div
+  className="page-body"
+>
+  <div
+    className=""
+  >
+    <div
+      className="menu heading-page"
+    >
+      <div
+        className="heading-page-title"
+      >
+        История действий
+      </div>
+      <div
+        className="heading-page-buttons"
+      >
+        <div
+          className="button button__default"
+          onClick={[Function]}
+        >
+          Свернуть историю
+        </div>
+      </div>
+    </div>
+    <div
+      className="tableHistory"
+    >
+      <div
+        className="tableHistory-row tableHistory-row__header"
+      >
+        <div
+          className="tableHistory-col"
+        >
+          Пользователь
+        </div>
+        <div
+          className="tableHistory-col"
+        >
+          Дата действия
+        </div>
+        <div
+          className="tableHistory-col"
+        >
+          Действие
+        </div>
+      </div>
+      <div
+        className="tableHistory-row"
+      >
+        <div
+          className="tableHistory-col"
+        >
+          Philip
+        </div>
+        <div
+          className="tableHistory-col"
+        >
+          20.10.2020 10:22
+        </div>
+        <div
+          className="tableHistory-col"
+        >
+          Вход в сервис
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

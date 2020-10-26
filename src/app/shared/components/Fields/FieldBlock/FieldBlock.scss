@@ -1,0 +1,11 @@
+@import "src/app/shared/style/style.const";
+@import "src/app/shared/style/style.classes";
+
+.field-block {
+  @extend .flex-center;
+  padding: 20px 0;
+
+  img {
+    margin-right: 42px;
+  }
+}

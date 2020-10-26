@@ -1,0 +1,1 @@
+export { TableHome } from "./TableHome";

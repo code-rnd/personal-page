@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Компонент undefined, отрисован корректно 1`] = `
+<div
+  className="page-body"
+>
+  <div
+    className=""
+  >
+    <div
+      className="menu heading-page"
+    >
+      <div
+        className="heading-page-title"
+      >
+        Главная
+      </div>
+      <div
+        className="heading-page-buttons"
+      >
+        <div
+          className="button button__error"
+          onClick={[Function]}
+        >
+          Выход
+        </div>
+      </div>
+    </div>
+    <ul>
+      <li>
+        Редактирование списка услуг
+      </li>
+      <li>
+        Просмотр истории действий пользователей
+      </li>
+    </ul>
+  </div>
+</div>
+`;
