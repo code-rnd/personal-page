@@ -3,10 +3,12 @@ export enum ACTION_HISTORY {
   ADD_CONTACT = "Добавление контакта",
   ARCHIVE_CONTACT = "Архивирование контакта",
 
-  LOGIN = "Вход в сервис",
-  LOGIN_OUT = "Выход из сервиса",
+  LOGIN = "Вход",
+  LOGIN_OUT = "Выход",
 
   UPDATE_USER_INFO = "Редактирование информации о пользователя",
+
+  PARCEL_UPDATE = "Данные о посылке обновлены",
 }
 
 export interface HistoryModelState {

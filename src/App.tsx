@@ -7,7 +7,6 @@ import { Routing } from "./app/routing/routing";
 import { store } from "./app/store";
 
 import "./App.scss";
-
 export const App: FC = () => {
   return (
     <Provider store={store}>

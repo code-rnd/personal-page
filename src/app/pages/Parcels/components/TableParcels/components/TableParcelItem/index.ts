@@ -1,0 +1,1 @@
+export { TableParcelItem } from "./TableParcelItem";

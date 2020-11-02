@@ -6,6 +6,7 @@ import { routeReducer as route } from "../route";
 import { pagecontrolReducer as pagecontrol } from "../pagecontrol";
 import { contactsReducer as contacts } from "../contacts";
 import { notificationsReducer as notifications } from "../notifications";
+import { parcelReducer as parcel } from "../parcel";
 
 export const reducers = combineReducers({
   history,
@@ -14,4 +15,5 @@ export const reducers = combineReducers({
   pagecontrol,
   contacts,
   notifications,
+  parcel,
 });

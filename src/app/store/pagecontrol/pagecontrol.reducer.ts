@@ -4,8 +4,9 @@ import { pageControlActions } from "./pagecontrol.actions";
 
 const initialState: PageControlModel = {
   home: false,
-  history: false,
-  contacts: false,
+  history: true,
+  contacts: true,
+  parcels: true,
 };
 
 const setControl = (

@@ -1,0 +1,7 @@
+@import "src/app/shared/style/style.const";
+
+.table-parcels-row {
+  &__complete {
+    background-color: $color-success-muted;
+  }
+}

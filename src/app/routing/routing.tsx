@@ -11,10 +11,10 @@ import { Routes } from "./routing.const";
 import { Home } from "../pages/Home";
 
 export const Routing = memo(() => {
-  const { name } = useSelector(getAuthorization).user;
+  const { firstName } = useSelector(getAuthorization).user.name;
 
   const history = useHistory();
-  const isLogin = useMemo(() => !!name.firstName, [name]);
+  const isLogin = useMemo(() => !!firstName, [firstName]);
 
   useEffect(() => {
     if (!isLogin) {

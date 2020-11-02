@@ -61,6 +61,12 @@ export const Header: FC = memo(() => {
           />
           <Button
             type={BUTTON_TYPE.NORMAL}
+            onClick={() => handleClick(RouteUrls.PARCELS)}
+            title={Page.PARCELS}
+            className={cn([{ button__active: route === RouteUrls.PARCELS }])}
+          />
+          <Button
+            type={BUTTON_TYPE.NORMAL}
             onClick={() => handleClick(RouteUrls.HISTORY)}
             title={Page.HISTORY}
             className={cn([{ button__active: route === RouteUrls.HISTORY }])}

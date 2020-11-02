@@ -6,8 +6,8 @@ import { authorizationActions } from "../../store/authorization/authorization.ac
 import { getAuthorization } from "../../store/authorization/authorization.selectors";
 import { BUTTON_TYPE } from "../../shared/components/Button/model/ButtonProps.model";
 import { ACTION_LOGIN } from "../../store/authorization/authorization.model";
-import { FieldText } from "../../shared/components/Fields/InputText";
 import { FieldBlock } from "../../shared/components/Fields/FieldBlock";
+import { FieldText } from "../../shared/components/Fields/InputText";
 import { ACTION_HISTORY } from "../../store/history/history.model";
 import { Button } from "../../shared/components/Button";
 

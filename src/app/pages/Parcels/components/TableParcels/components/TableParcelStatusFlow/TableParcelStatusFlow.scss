@@ -1,0 +1,41 @@
+@import "src/app/shared/style/style.const";
+@import "src/app/shared/style/style.classes";
+
+.table-parcels-row__history-statuses {
+  height: auto;
+  opacity: 1;
+  overflow: auto;
+
+  padding: 33px 77px;
+  background-color: $color-success-muted;
+
+  transition: all 0.5s;
+
+  &__hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+
+    transition: all 0.5s;
+  }
+}
+
+.table-statuses-row-header {
+  font-weight: bold;
+}
+.table-statuses-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+
+  border-bottom: $border-bottom-row;
+  padding: 10px 0;
+
+  opacity: 0.5;
+
+  @extend .flex-center;
+}
+
+.table-statuses-row__done {
+  opacity: 1;
+}

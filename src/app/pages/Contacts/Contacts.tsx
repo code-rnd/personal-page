@@ -12,6 +12,9 @@ import { Body } from "../../shared/components/Body";
 import { Page } from "../../routing/routing.enums";
 import { getContacts } from "../../store/contacts";
 
+import add_contact_icon from "../../../assets/button-icons/add-contact-icon.svg";
+import archive_icon from "../../../assets/button-icons/archive-icon.svg";
+
 export const Contacts: FC = memo(() => {
   const { contacts } = useSelector(getPageControl);
   const { list, isLoading } = useSelector(getContacts);
@@ -44,12 +47,19 @@ export const Contacts: FC = memo(() => {
               onClick={() => setArchiveMode(!isArchiveMode)}
               title={isArchiveMode ? "Выйти из архива" : "Перейти в архив"}
               disable={!isShowTable}
+              icon={
+                <img
+                  src={archive_icon}
+                  alt={isArchiveMode ? "Выйти из архива" : "Перейти в архив"}
+                />
+              }
             />
             <Button
               type={BUTTON_TYPE.SUCCESS}
               onClick={() => setShowModal(true)}
               title="Добавить контакт"
               disable={!isShowTable}
+              icon={<img src={add_contact_icon} alt="Добавить контакт" />}
             />
             <Button
               type={BUTTON_TYPE.DEFAULT}

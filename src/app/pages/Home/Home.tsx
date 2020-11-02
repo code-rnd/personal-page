@@ -17,6 +17,9 @@ import { UserBlock } from "../../shared/components/UserBlock";
 import { EditFormHome } from "./components/EditFormHome";
 import { TableHome } from "./components/TableHome";
 
+import edit_icon from "../../../assets/button-icons/edit-icon.svg";
+import exit_icon from "../../../assets/button-icons/exit-icon.svg";
+
 export const Home: FC = memo(() => {
   const { user, isLoading } = useSelector(getAuthorization);
   const dispatch = useDispatch();
@@ -37,12 +40,14 @@ export const Home: FC = memo(() => {
               onClick={() => setEditMode(!isEditMode)}
               title={isEditMode ? "Отменить" : "Редактировать"}
               loading={isLoading}
+              icon={<img src={edit_icon} alt="режим редактирования" />}
             />
             <Button
               type={BUTTON_TYPE.ERROR}
               onClick={handleLogOut}
               title={ACTION_HISTORY.LOGIN_OUT}
               loading={isLoading}
+              icon={<img src={exit_icon} alt="выход из кабинета" />}
             />
           </>
         }

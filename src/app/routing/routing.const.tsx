@@ -5,6 +5,7 @@ import { RouteModel } from "./routing.model";
 import { Contacts } from "../pages/Contacts";
 import { RouteUrls } from "./routing.enums";
 import { History } from "../pages/History";
+import {Parcels} from "../pages/Parcels";
 
 export const Routes: RouteModel[] = [
   {
@@ -15,6 +16,11 @@ export const Routes: RouteModel[] = [
   {
     component: () => <Contacts />,
     path: `${RouteUrls.CONTACTS}`,
+    exact: false,
+  },
+  {
+    component: () => <Parcels />,
+    path: `${RouteUrls.PARCELS}`,
     exact: false,
   },
   {

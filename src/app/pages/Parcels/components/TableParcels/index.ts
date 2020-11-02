@@ -1,0 +1,1 @@
+export { TableParcels } from "./TableParcels";

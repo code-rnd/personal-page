@@ -20,8 +20,11 @@ export const BreadСrumbs: FC = memo(() => {
       case RouteUrls.HOME:
         return Page.HISTORY;
 
+      case RouteUrls.PARCELS:
+        return Page.PARCELS;
+
       default:
-        return Page.HISTORY;
+        return Page.HOME;
     }
   }, [route]);
 

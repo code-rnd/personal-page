@@ -40,9 +40,6 @@ class AuthorizationActions {
           action,
         })
       );
-      dispatch(
-        notificationsActions.updateContent("Авторизация прошла успешно")
-      );
       dispatch(historyActions.updateHistory(prepareAction(action)));
       dispatch(this.setLoading(false));
     } catch (e) {

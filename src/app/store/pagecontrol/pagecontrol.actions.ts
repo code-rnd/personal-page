@@ -6,7 +6,7 @@ import { getCurrentPage } from "./pagecontrol.utils";
 
 class Pagecontrol {
   readonly prefix: string = "PAGE_CONTROL";
-  readonly SET_CONTROL: string = "SET_CONTROL";
+  readonly SET_CONTROL: string = `${this.prefix}.SET_CONTROL`;
 
   setControl: ActionFunction1<any, Action<any>> = createAction(
     this.SET_CONTROL

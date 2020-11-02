@@ -8,6 +8,7 @@ export interface ButtonPropsModel {
   className?: string;
   style?: any;
   size?: BUTTON_SIZE;
+  icon?: any;
 }
 
 export enum BUTTON_SIZE {

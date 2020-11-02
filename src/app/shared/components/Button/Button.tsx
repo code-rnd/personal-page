@@ -20,6 +20,7 @@ export const Button: FC<ButtonPropsModel> = memo(
     loading,
     style,
     size,
+    icon,
   }) => {
     const styledSize = useMemo(() => {
       switch (size) {
@@ -47,7 +48,13 @@ export const Button: FC<ButtonPropsModel> = memo(
           onClick={onClick}
           style={{ ...style, ...styledSize }}
         >
-          {title}
+          <span
+            className="button-title"
+            style={{ paddingRight: icon ? "10px" : "" }}
+          >
+            {title}
+          </span>
+          {icon && icon}
           {loading && <div className="spinner" />}
         </div>
       </>

@@ -17,6 +17,11 @@
 
   transition: all 0.5s;
 
+  img {
+    height: 14px;
+    width: 14px;
+  }
+
   &__success {
     border: $border $color-success;
 
@@ -75,4 +80,12 @@
   &__loading {
     @extend .animate;
   }
+}
+
+@media (orientation: portrait) {
+  //.button {
+  //  &-title {
+  //    display: none;
+  //  }
+  //}
 }

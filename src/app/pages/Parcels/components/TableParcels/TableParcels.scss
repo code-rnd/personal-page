@@ -1,0 +1,30 @@
+@import "src/app/shared/style/style.const";
+@import "src/app/shared/style/style.classes";
+
+.table-parcels {
+  &-row__header {
+    font-weight: bold;
+
+    &:hover {
+      background-color: white !important;
+    }
+  }
+
+  &-row {
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    border-bottom: $border-bottom-row;
+
+    @extend .row-default;
+  }
+
+  &-col {
+    @extend .flex-center;
+    text-align: center;
+
+    &-status {
+      font-weight: bold;
+    }
+  }
+}
